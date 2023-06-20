@@ -1,0 +1,29 @@
+.img_team{
+    height: 300px;
+    border-radius: 10px;
+}
+.team_grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.team_head{
+    font-size: 30px;
+    font-weight: bolder;
+margin-bottom: 30px;
+}
+.team{
+    margin-top: 50px;
+}
+.card_team_h{
+font-weight: bolder;
+}
+.card_team_d{
+font-size: 13px;
+}
+
+.card_team{
+    height: 360px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}

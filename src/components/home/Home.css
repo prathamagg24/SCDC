@@ -1,0 +1,55 @@
+.home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    margin-top: 50px;
+}
+.home_left_h1{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 59px;
+/* or 123% */
+
+letter-spacing: 0.025em;
+
+color: #002063;
+
+mix-blend-mode: normal;
+}
+.home_img{
+    height: 320px;
+}
+
+.home_left{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 320px;   
+}
+.home_left_desc{
+font-style: normal;
+font-weight: 300;
+font-size: 19px;
+line-height: 28px;
+/* or 152% */
+margin-top: 15px;
+
+
+color: #7D7987;
+
+mix-blend-mode: normal;
+}
+.home_left_btn{
+    background-color: #002063;
+    width: 120px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 12px;
+}

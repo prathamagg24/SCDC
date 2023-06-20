@@ -1,0 +1,44 @@
+.ser_head{
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.font_wgt_wrap{
+    font-weight: bolder;
+}
+.ser_desc{
+    font-family: 'Mulish';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 30px;
+/* or 167% */
+
+text-align: center;
+
+color: #7D7987;
+max-width: 600px;
+
+margin: auto;
+}
+.services{
+    margin-top: 80px;
+}
+.ser_cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+.ser_btn{
+    color: #458FF6;
+    width: 120px;
+    text-align: center;
+    border: 1px solid #458FF6;
+    border-radius: 25px;
+    font-size: 15px;
+    margin: auto;
+    padding: 10px;
+}

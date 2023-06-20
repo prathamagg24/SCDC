@@ -1,0 +1,44 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 10000000;
+background-color: white;
+
+width: 100vw;
+}
+
+.logo_nav{
+    height: 60px;
+    margin-left: 40px;
+    z-index: 1000;
+}
+.right_nav{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+
+}
+.right_nav_ele{
+    margin-right: 50px;
+}
+.right_nav_btn{
+    background: #617BFF;
+    border-radius: 12px;
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+.right_nav_ele{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+/* identical to box height */
+
+color: #585767;
+}
