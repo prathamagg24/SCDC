@@ -3,14 +3,18 @@ import "./Contact.css";
 import img from "./contact.jpg";
 function Contact() {
   return (
-    <>
-<div className="contact_head ">Contact Us</div>
+    <div>
+<div className="contact-text">
+<div className="contact_head ">CONTACT US</div>
+<div className="contact-subheading">Feel free to connect in case of queries</div>
+</div>
     <div className="contact">
       <form action="https://submit-form.com/HZEivwMc">
         <input
           type="text"
           id="name"
           name="name"
+          className="form-input"
           placeholder="Name"
           required=""
         />
@@ -19,6 +23,7 @@ function Contact() {
           type="email"
           id="email"
           name="email"
+          className="form-input"
           placeholder="Email"
           required=""
         />
@@ -33,7 +38,7 @@ function Contact() {
       </form>
       <img src={img} className="form_img" />
     </div>
-    </>
+    </div>
   );
 }
 

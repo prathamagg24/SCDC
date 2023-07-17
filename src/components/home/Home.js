@@ -8,8 +8,8 @@ function Home() {
         <div className="home_left_h1">Book An</div>
         <div className="home_left_h1">Appointment</div>
         <div className="home_left_desc">
-          Suryam provides progressive, and affordable healthcare, accessible on
-          mobile and online for everyone
+          Suryam provides progressive, effective and affordable healthcare, accessible on your
+          mobile and online for everyone. Easy and Portable access to all the facilities. An all round place for Child Development and much more.
         </div>
         <div className="home_left_btn">Book Now</div>
       </div>
