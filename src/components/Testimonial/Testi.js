@@ -1,20 +1,24 @@
-import React from "react";
+import React, {Component} from "react";
 import "../Testimonial/Testi.css";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// import Carousel from "react-multi-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
+import Star from './Images/4star.jpg';
+import Pic from './Images/Sarina.jpg';
+//import "react-multi-carousel/lib/styles.css";
 
 const content = [
   {
     id: "1",
     text: "If there is one thing the Italians do brilliantly, it is celebrations, food & family – just like us Indians!! It is wonderful that Costa is luring Indians to enjoy a holiday, visit places and celebrate – all on the luxuries of a cruise. They have understood that like them, Indians love to travel with a large group of family and friends and will not compromise on food which is why they have made every effort to ensure there is plenty of Indian cuisine on board for vegetarians too.",
     name: "Sarina",
-    url: "/Images/Sarina.jpg",
+    url: "./Images/Sarina.jpg",
   },
   {
     id: "2",
     text: "This was my third time onboard Costa Cruises. I had cruised with my large family of 20 of us on Costa Victoria when they were sailing from Mumbai to Cochin in 2019. We were really happy with all the services, food, and drinks. The staff were very friendly, and the way they took care of us with their hospitality was commendable.",
     name: "Krishna Nair",
-    url: "/Images/Sarina.jpg",
+    url: "./Images/Sarina.jpg",
   },
   {
     id: "3",
@@ -53,9 +57,10 @@ const responsive = {
   },
 };
 
-function Testimonials() {
+export default class Testi extends Component{
+  render(){
   return (
-    <section id="Testimonials">
+   
       <div className="test-box">
         <div className="test-content">
           <div className="test-heading" >
@@ -68,6 +73,7 @@ function Testimonials() {
             <div className="test-videos">
                 <div className="row row-testimonial" > 
                 <Carousel
+                  className="testo"
                   responsive={responsive}
                   showDots={false}
                   arrows={false}
@@ -77,7 +83,7 @@ function Testimonials() {
                   infinite={true}
                   autoPlay={true}
                   autoPlaySpeed={2000}
-                  //partialVisible={false}
+                  partialVisible={false}
                 >
                   {content.map((cont) => {
                     return (
@@ -87,7 +93,7 @@ function Testimonials() {
                         >
                           <img
                             className="star-setting"
-                            src={"Images/4star.jpg"}
+                            src={Star}
                             alt="star"
                           ></img>
                         </div>
@@ -118,7 +124,7 @@ function Testimonials() {
                               <div className="col-sm d-flex align-items-center info-set">
                                 <div className="circular-image-container3 mx-3">
                                   <img
-                                    src={process.env.PUBLIC_URL + cont.url}
+                                    src={Pic}
                                     className="dp3-setting"
                                     alt="control"
                                   />
@@ -145,8 +151,8 @@ function Testimonials() {
           </div>
         </div>
       </div>
-    </section>
+    
   );
+  }
 }
 
-export default Testimonials;

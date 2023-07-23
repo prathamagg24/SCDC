@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./Test.css";
-import movie from "./FB1.mp4";
+import movie from "./movie.mp4";
 export default class Testimonials extends Component {
   handleVideoEnded = (event) => {
     // Restart the video when it finishes playing

@@ -1,5 +1,6 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import "react-multi-carousel/lib/styles.css";
 import Navbar from './components/navbar/Navbar';
 import Home from './components/home/Home';
 import Services from './components/services/Services';
