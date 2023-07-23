@@ -7,28 +7,28 @@ function Car() {
 <div className="slider">
 	<div className="slide-track">
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img"/>
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img" />
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img"/>
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img" />
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img"/>
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img"/>
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img"/>
 		</div>
 		<div className="slide">
-             <img src={s1} className="test_svg" />
+             <img src={s1} className="test_svg" alt="img" />
 		</div>
 
 		

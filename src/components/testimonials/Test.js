@@ -2,7 +2,13 @@ import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./Test.css";
+import movie from "./FB1.mp4";
 export default class Testimonials extends Component {
+  handleVideoEnded = (event) => {
+    // Restart the video when it finishes playing
+    event.target.currentTime = 0;
+    event.target.play();
+  };
   render() {
     return (
       <>
@@ -16,11 +22,12 @@ export default class Testimonials extends Component {
         showStatus={false}
         autoPlay={true}
         interval={6100}
+        stopOnHover={false}
       >
         <div className="carousel_scdc">
           <div className="video_sec">
-            <video width="280" height="180" controls>
-              <source src="./movie.mp4" type="video/mp4" />
+            <video width="280" height="180" controls autoplay  onEnded={this.handleVideoEnded}>
+              <source src={movie} type="video/mp4" />
             </video>
           </div>
           <div className="content_sec">
@@ -33,8 +40,8 @@ export default class Testimonials extends Component {
         </div>
         <div className="carousel_scdc">
           <div className="video_sec">
-            <video width="280" height="180" controls>
-              <source src="./movie.mp4" type="video/mp4" />
+            <video width="280" height="180" controls autoplay  onEnded={this.handleVideoEnded}>
+              <source src={movie} type="video/mp4" />
             </video>
           </div>
           <div className="content_sec">
@@ -47,8 +54,8 @@ export default class Testimonials extends Component {
         </div>
         <div className="carousel_scdc">
           <div className="video_sec">
-            <video width="280" height="180" controls>
-              <source src="./movie.mp4" type="video/mp4" />
+            <video width="280" height="180" controls autoplay  onEnded={this.handleVideoEnded}>
+              <source src= {movie} type="video/mp4" />
             </video>
           </div>
           <div className="content_sec">
