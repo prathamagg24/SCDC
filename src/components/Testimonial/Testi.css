@@ -128,7 +128,7 @@
 	}
 }
 
-.testo .box {
+.box {
 	/* display: flex; */
 	flex-direction: column;
 	background-color: white;
@@ -141,7 +141,7 @@
 	/* border-radius: 4px; */
 }
 
-.testo .end-allin {
+ .end-allin {
 	display: flex;
 }
 
@@ -165,12 +165,12 @@
 	/* padding: 10px; */
 }
 
-.testo .star-setting {
+ .star-setting {
 	width: 50%;
 	height: 10%;
 }
 
-.testo .circular-image-container3 {
+.circular-image-container3 {
 	width: 4vw;
 	/* Adjust the width as needed */
 	height: 4vw;
