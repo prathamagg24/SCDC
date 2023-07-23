@@ -45,6 +45,7 @@
 
 .test-videos {
 	display: flex;
+
 	width: 20%;
 	/* margin: 0 auto; */
 	justify-self: center;
