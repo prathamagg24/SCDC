@@ -7,6 +7,7 @@ import Test from './components/testimonials/Test';
 import Team from './components/team/Team';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/footer';
+import Testimonial from './components/Testimonial/Testi';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Navbar/>
       <Home/>
       <Services/>
+      <Testimonial/>
       <Test/>
       <Team/>
       <Contact/>
