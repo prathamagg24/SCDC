@@ -6,7 +6,9 @@
   /* SOCIAL STUFF */
   .social-container {
     
-    padding-top: 25px;
+    padding-top: 45px;
+    /* align-items: baseline; */
+  
   }
   a.social {
     margin: 0 1rem;
@@ -15,8 +17,12 @@
   }
   
   a.social:hover {
-    transform: translateY(-2px);
-  }
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+}
   
 
   .iconColor{

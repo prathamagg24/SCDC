@@ -9,13 +9,19 @@
     align-items: center;
 }
 .insu{
-    font-size: 20px;
+  font-size: 30px;
  font-weight: bolder;   
+ line-height: 3rem;
 
 }
-.logo_nsut{
+.logo_scdc{
     max-width: 22vw;
     max-height: 22vh;
+    margin-top: -3rem;
+}
+.footer-text{
+    font-size: 16px;
+    line-height: 1.5rem;
 }
 .discord_wrap{
     display: flex;
@@ -221,9 +227,42 @@ hr{
     text-align: center;
 }
 .footerhead{
-    margin-bottom: 5px;
+    font-size: 25px;
+   
 }
+.footer-address{
+    font-size: 16px;
+    line-height: 1.5rem;
+    width: 20rem;
+}
+/* ... (existing CSS rules) ... */
 
-.Sponsor_Button{
-    text-decoration: none;
+.col.col-sponsor {
+    flex-basis: 20%; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .map-box {
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+   
+   
 }
+  
+  .map-box:hover {
+    background-color: #f3f3f365; /* Add a different background color for hover effect */
+  }
+  
+  .map-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ... (existing CSS rules) ... */
+  

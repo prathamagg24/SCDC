@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./footer.css";
 import SocialFollow from "./social";
+import mapImage from "./mapImage.jpg"
 
 import im from "../../images/scdclogo.png"
 function Footer() {
@@ -14,11 +15,12 @@ function Footer() {
 
               <img
                 src={im}
-                className="logo_nsut"
+                className="logo_scdc"
+                alt="Logo"
               ></img>
             </div>
           </div>
-          <div>
+          <div className="footer-text">
             A 24-hour Software Hackathon with themes like IoT,
             Blockchain/Fintech, AR/VR, Edtech, Healthcare, Assistive technology
             and much more. IEEE NSUT’s annual Technical Extravaganza HackNSUT’22
@@ -26,89 +28,46 @@ function Footer() {
             Moksha-Innovision 22, the annual cultural and technical fest of
             Netaji Subhas University of Technology.
           </div>
-        </div>
-        <div className="col brd">
-          <h3 className="footerhead">
-            Address{" "}
-            <div className="underline">
-              <span></span>
-            </div>
-          </h3>
-          <div>Netaji Subhas University of Technology</div>
-          <div>Sector -3, Dwarka</div>
-          <div>New Delhi - 110078</div>
-          <div className="email"><a href="mailto:ieee@nsut.ac.in">ieee@nsut.ac.in</a></div>
-
-          <h4>
-            Ritik Yadav <br />
-            Chief-Convener: +91 97113 57634
-          </h4>
-          <br></br>
-          <h4>
-            Pranav Chauhan <br />
-            Chief-Convener: +91 9315 298602
-          </h4>
-        </div>
-        {/* <div className="col brd">
-          <h3>
-            Links{" "}
-            <div className="underline">
-              <span></span>
-            </div>
-          </h3>
-          <ul>
-            <li>
-              <a href="#about" style={{ textAlign: "left" }}>About</a>
-            </li>
-            <li>
-              <a href="#sponsor">Sponsors</a>
-            </li>
-            <li>
-              <a href="#faq">FAQs</a>
-            </li>
-            <li>
-              <a href="#footer">Contact</a>
-            </li>
-            <li>
-              <a href="/rules">Rules</a>
-            </li>
-          </ul>
-
-        </div> */}
-        <div className="col brd">
-          <h3 className="footerhead">
-            Links{" "}
-            <div className="underline">
-              <span></span>
-            </div>
-          </h3>
-          <div className="wrap_l">
-          <div href="#about">About</div>
-          <div href="#sponsor">Sponsors</div>
-          <div href="#faq">FAQs</div>
-          <div href="#footer">Contact</div>
-          <div href="/rules">Rules</div>
-          </div>
-
-        </div>
-        <div className="col">
-          {/* <div
-            className="apply-button"
-            data-hackathon-slug="hacknsut-5"
-            data-button-theme="dark"
-            style={{ height: 44 + "px", width: 312 + "px" }}
-          ></div> */}
           <div className="social">
             <SocialFollow />
           </div>
-          <div style={{ marginTop: "30px" }}>
+        </div>
+        <div className="col brd">
+          <h3 className="footerhead" style={{marginTop:"10px"}}>
+            Address
+          
+          </h3>
+          <div className="footer-address">
+          <div>Suryam Child Development Clinic</div>
+          <br></br>
+          <div>Main Market, E-28, Hauz khas Market, Kharera, Hauz Khas</div>
+          <div>New Delhi - 110016</div>
+          </div>
+
+         
+        </div>
+      
+        <div className="col col-sponsor">
+        
+         
+          <div style={{ marginTop: "00px" }}>
             <div className="insu">
             Interested in sponsoring us?
               </div>
-          <a href="https://forms.gle/rLDheSbUvMDTfwhGA" target={"_blank"} style={{textDecoration:"none"}}>
-
-              <button className="btn btn1 brochure" style={{ marginTop: "20px", textDecoration: "none" }}>Sponsor Us</button>
+              <a
+              href="https://maps.app.goo.gl/HN6xwvSm2bRgEiw66"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="map-box">
+                <img
+                  src={mapImage}
+                  alt="Map"
+                  className="map-image"
+                />
+              </div>
             </a>
+         
           </div>
 
         </div>

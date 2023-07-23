@@ -29,12 +29,7 @@ export default function SocialFollow() {
       >
         <FontAwesomeIcon icon={faInstagram} size="2x" />
       </a>
-      <a
-        href="https://www.linkedin.com/company/techweek-ieeensut/"
-        className="iconColor instagram social"
-      >
-        <FontAwesomeIcon icon={faLinkedin} size="2x" />
-      </a>
+      
       <a
         href="mailto:ieee@nsut.ac.in"
         className="iconColor instagram social"
