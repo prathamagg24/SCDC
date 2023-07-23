@@ -1,1 +1,2 @@
-src/components/testimonials/*.mp4 filter=lfs diff=lfs merge=lfs -text
+# src/components/testimonials/*.mp4 filter=lfs diff=lfs merge=lfs -text
+* -filter=lfs diff=lfs merge=lfs -text
