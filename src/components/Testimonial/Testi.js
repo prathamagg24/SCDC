@@ -1,11 +1,11 @@
 import React, {Component} from "react";
-import "../Testimonial/Testi.css";
-// import Carousel from "react-multi-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
+import "./Testi.css";
+import Carousel from "react-multi-carousel";
+// import "react-responsive-carousel/lib/styles/carousel.min.css";
+// import { Carousel } from "react-responsive-carousel";
 import Star from './Images/4star.jpg';
 import Pic from './Images/Sarina.jpg';
-//import "react-multi-carousel/lib/styles.css";
+import "react-multi-carousel/lib/styles.css";
 
 const content = [
   {
@@ -70,10 +70,10 @@ export default class Testi extends Component{
             <p className="test-subtitle PoppReg" style={{ fontWeight: 400 }}>
               What our customers are saying about us
             </p>
-            <div className="test-videos">
-                <div className="row row-testimonial" > 
+            <div className="test-videos" >
+              <div className="row row-testimonial" > 
                 <Carousel
-                  className="testo"
+                  // className="testo"
                   responsive={responsive}
                   showDots={false}
                   arrows={false}
@@ -94,12 +94,11 @@ export default class Testi extends Component{
                           <img
                             className="star-setting"
                             src={Star}
-                            alt="star"
+                            alt={cont.id}
                           ></img>
                         </div>
                         <div
                           style={{
-                           
                             display: "flex",
                             justifyContent: "space-between",
                             flexDirection: "column",
@@ -126,10 +125,10 @@ export default class Testi extends Component{
                                   <img
                                     src={Pic}
                                     className="dp3-setting"
-                                    alt="control"
+                                    alt={cont.id}
                                   />
                                 </div>
-                                <div className="ml-3 info-setting">
+                                <div className="ml-3 info-setting" >
                                   <h3
                                     className="name PoppReg"
                                     style={{ fontWeight: 700 }}

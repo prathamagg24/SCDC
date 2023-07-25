@@ -8,7 +8,7 @@ function Footer() {
 
   return (
     <footer>
-      <div className="row" id="footer">
+      <div className="row-footer" id="footer">
         <div className="col">
           <div className="logos_wrap">
             <div>
