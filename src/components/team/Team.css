@@ -1,29 +1,64 @@
-.img_team{
+.img_team {
     height: 300px;
     border-radius: 10px;
 }
-.team_grid{
+
+.team_grid {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.team_head{
+
+.team_head {
     font-size: 30px;
     font-weight: bolder;
-margin-bottom: 30px;
-}
-.team{
-    margin-top: 50px;
-}
-.card_team_h{
-font-weight: bolder;
-}
-.card_team_d{
-font-size: 13px;
+    margin-bottom: 30px;
 }
 
-.card_team{
-    height: 360px;
+.team {
+    margin-top: 50px;
+}
+
+.card_team_h {
+    font-weight: bolder;
+}
+
+.card_team_d {
+    font-size: 13px;
+}
+
+.card_team {
+    height: 400px;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+/* Update the CSS to include a media query for mobile view */
+
+/* .team_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card_team {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+} */
+
+@media (max-width: 767px) {
+    .team_grid {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .card_team {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
 }
